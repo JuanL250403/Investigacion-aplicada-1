@@ -23,28 +23,3 @@ ant.addEventListener("click", function(){
     }
     console.log("s" + s)
 })
-
-var ida = 0;
-function loop(){
-    console.log("j")
-        setTimeout(function(){
-            console.log("hola")
-            ida++
-            if (ida >= slides.length){
-                ida = 0;
-            }
-            if (ida < slides.length){
-                slides[ida].style.order = "-1"
-                if (ida > 0){
-                    slides[ida-1].removeAttribute("style");
-                }
-            }
-            console.log(ida)
-            loop();
-        }, 6000) 
-    }
-window.addEventListener("resize", function(){
-    if (window.innerWidth < 460){
-        loop();
-    }
-}, false);

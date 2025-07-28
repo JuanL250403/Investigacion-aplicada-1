@@ -9,7 +9,7 @@
     flex-direction: row;
     overflow: hidden;
     border: 1px transparent rgb(0, 174, 243);
-    border-radius: 50px;
+    border-radius: 5px;
 }
 #slider img{
     width: 100%;
@@ -101,14 +101,14 @@ footer{
         margin: 30px auto;
     }
     #anterior, #siguiente{
-        display: none;
+        font-size: 30px;
     }
     #anterior{
-    left: 30px;
+    left: 40px;
     z-index: 99;
     }
     #siguiente{
-    right: 30px;
+    right: 40px;
     }
     #fotos{
     width: 100%;
@@ -119,6 +119,5 @@ footer{
     flex-direction: row;
     overflow: hidden;
     border: 1px transparent rgb(0, 174, 243);
-    border-radius: 0;
     }
 }
