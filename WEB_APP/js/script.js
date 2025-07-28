@@ -25,18 +25,8 @@ ant.addEventListener("click", function(){
 })
 
 var ida = 0;
-var movil = false;
-window.addEventListener("resize", function(){
-    if (window.innerWidth < 460){
-        movil = true;
-    }
-    else{
-        movil = false;
-    }
-}, false);
-function loop(movil){
+function loop(){
     console.log("j")
-    if (movil == true){
         setTimeout(function(){
             console.log("hola")
             ida++
@@ -53,4 +43,8 @@ function loop(movil){
             loop();
         }, 6000) 
     }
+window.addEventListener("resize", function(){
+    if (window.innerWidth < 460){
+        loop();
     }
+}, false);
